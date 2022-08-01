@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Turkey</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2638b697cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="hero-container">
+        <div class="header-container">
+          <div class="logo-container">
+            <img id="header-logo" src="Netflix-Logo.png" alt="logo" />
+          </div>
+          <div class="sidebar-container">
+            <select name="language" id="language">
+              <option value="english">
+                <i class="fa-solid">&#xf0ac;</i> English
+              </option>
+              <option value="turkish">
+                <i class="fa-solid">&#xf0ac;</i> Turkish
+              </option>
+            </select>
+            <button id="signin-button">Sign In</button>
+          </div>
+        </div>
+        <div class="content-area">
+          <div class="main-text">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+          </div>
+          <div class="search-bar-container">
+            <h3>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </h3>
+            <div class="search-box">
+              <input
+                id="email-input"
+                type="email"
+                placeholder="Email address"
+                id="email"
+              />
+              <label for="input" class="control-label">Email address</label>
+              <button id="get-button">Get Started ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <div class="left-text">
+            <h1>Enjoy on your TV.</h1>
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div class="image-box">
+            <video autoplay loop id="tv-animation" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"></video>
+            <img id="tv-layout" src="tv.png" alt="tv-layout">
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
