@@ -92,9 +92,8 @@ body {
 }
 
 .search-bar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: display;
+  text-align: center;
 }
 
 .search-bar-container h3 {
@@ -213,7 +212,62 @@ body {
     max-width: 100%;
     padding-top: 20px;
   }
+
+  .search-bar-container {
+    display: block;
+  }
+
+  .search-bar-container h3 {
+    font-size: 0.65rem;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .left-text {
+    width: 70%;
+    padding: 0;
+  }
+
+  .search-box {
+    height: 40px;
+  }
+
+  #email-input {
+    font-size: 0.6rem;
+    width: 100px;
+  }
+
+  #get-button {
+    width: 170px;
+    font-size: 18px;
+  }
+
+  .main-text h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .control-label {
+    bottom: 1rem;
+    left: 0.5rem;
+    font-size: 9px;
+  }
+
+  .hero-container {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1440px) {
   
+  .search-bar-container {
+    display: block;
+  }
 
   .search-bar-container h3 {
     font-size: 0.65rem;
