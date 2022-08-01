@@ -1,251 +1,262 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 
 body {
-    background-color: black;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    margin: 0;
+  background-color: black;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 .app-container {
-    height: 100vh;
-    margin-bottom: 250px;
+  height: 100vh;
+  margin-bottom: 250px;
 }
 
 .logo-container {
-    display: block;
+  display: block;
 }
 
-#header-logo{
-    height: 80px;
+#header-logo {
+  height: 80px;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .hero-container {
-    height: 70vh;
-    width: 100%;
-    background-image: url('netflix-background.jpg');
-    background-size:cover;
-    background-position: center;
-    box-shadow:inset 0 0 0 2000px rgba(0,0,0,.6);
-    position: relative;
-    border-bottom: 8px solid #222;
+  height: 70vh;
+  width: 100%;
+  background-image: url("netflix-background.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+  position: relative;
+  border-bottom: 8px solid #222;
 }
 
 .sidebar-container {
-    display: block;
+  display: block;
 }
 
-
 #language {
-    padding: 7px;
-    color: #fff;
-    background-color: rgba(0,0,0,.4);;
-    font-family: Helvetica,'FontAwesome';
-    border: 1px solid #aaa;
-    color: #fff;
-    font-size: 13px;
-    height: 100%;
-    width: 94px;
-    outline-style: none;
+  padding: 7px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: Helvetica, "FontAwesome";
+  border: 1px solid #aaa;
+  color: #fff;
+  font-size: 13px;
+  height: 100%;
+  width: 94px;
+  outline-style: none;
 }
 
 #signin-button {
-   background: #e50914;
-   padding: 0.45rem;
-   width: 75px;
-   border-radius: 3px;
-   color: #fff;
-   margin-left: 1rem;
-   border-style: none;
-   cursor: pointer;
-   font-size: 15px;
+  background: #e50914;
+  padding: 0.45rem;
+  width: 75px;
+  border-radius: 3px;
+  color: #fff;
+  margin-left: 1rem;
+  border-style: none;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .content-area {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    align-items: center;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .main-text {
-    max-width: 700px;
-    text-align: center;
+  max-width: 700px;
+  text-align: center;
 }
 
 .main-text h1 {
-    font-size: 3.55em;
-    margin-bottom: 0;
+  font-size: 3.55em;
+  margin-bottom: 0;
 }
 
 .main-text h2 {
-    font-weight: 400;
-    margin-bottom: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 .search-bar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .search-bar-container h3 {
-    font-weight: 400;
-    font-size: 1.1rem;
-    overflow: visible;
-    white-space: nowrap;
-    margin: 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  overflow: visible;
+  white-space: nowrap;
+  margin: 0;
 }
 
 .search-box {
-    display: flex;
-    height: 65px;
-    position: relative;
-    margin: 20px auto;
+  display: flex;
+  height: 65px;
+  position: relative;
+  margin: 20px auto;
 }
 
 #email-input {
-    width: 430px;
-    padding: 13px;
-    font-size: 0.9rem;
+  width: 430px;
+  padding: 13px;
+  font-size: 0.9rem;
 }
 
 #email-input:focus {
-    outline-style: none;
+  outline-style: none;
 }
 
 .control-label {
-    display: block;
-    position: absolute;
-    opacity: 0;
-    bottom: 2.3rem;
-    left: 0.5rem;
-    color: #5d5d5d;
-    transition: 0.2s ease-in-out transform;
-    font-size: 0.8rem;
-    margin-left: 5px;
-  }
+  display: block;
+  position: absolute;
+  opacity: 0;
+  bottom: 2.3rem;
+  left: 0.5rem;
+  color: #5d5d5d;
+  transition: 0.2s ease-in-out transform;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
 
-  .search-box input:placeholder-shown + .control-label {
-    visibility: hidden;
-    z-index: -1;
-    transition: 0.2s ease-in-out;
-  }
-  .search-box input:not(:placeholder-shown) + .control-label,
-  .search-box input:focus:not(:placeholder-shown) + .control-label {
-    visibility: visible;
-    z-index: 1;
-    opacity: 1;
-    transform: translateY(-10px);
-    transition: 0.2s ease-in-out transform;
-  }
+.search-box input:placeholder-shown + .control-label {
+  visibility: hidden;
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+.search-box input:not(:placeholder-shown) + .control-label,
+.search-box input:focus:not(:placeholder-shown) + .control-label {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: 0.2s ease-in-out transform;
+}
 
 #get-button {
-    width: 220px;
-    background-color: #e50914;
-    color: #fff;
-    font-size: 26px;
-    outline-style: none;
-    cursor: pointer;
-    border-style: none;
-    border-left: 1px solid #333;
-    
+  width: 220px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 26px;
+  outline-style: none;
+  cursor: pointer;
+  border-style: none;
+  border-left: 1px solid #333;
 }
 
 #get-button:hover {
-    background: #631519;
-    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+  background: #631519;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
 }
 
 .bottom-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1100px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+  align-items: center;
 }
 
 .left-text {
-    font-size: 1.4rem;
-    color: #fff;
-    width: 50%;
-    padding: 0 3rem 0 0;
+  font-size: 1.4rem;
+  color: #fff;
+  width: 50%;
+  padding: 0 3rem 0 0;
 }
 
 .image-box {
-    position: relative;
+  position: relative;
 }
 
 #tv-layout {
-    border: 0;
-    height: auto;
-    max-width: 100%;
+  border: 0;
+  height: auto;
+  max-width: 100%;
 }
 
 #tv-animation {
-    height: 100%;
-    left: 50%;
-    max-height: 54%;
-    max-width: 73%;
-    position: absolute;
-    top: 46%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    z-index: -1;
+  height: 100%;
+  left: 50%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
 }
 
 @media screen and (max-width: 736px) {
-    #header-logo{
-        height: 50px ;
-    }
+  #header-logo {
+    height: 50px;
+  }
 
-    .search-bar-container h3 {
-        font-size: 0.65rem;
-    }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 20px;
+  }
+  
 
-    .bottom-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 30px;
-    }
+  .search-bar-container h3 {
+    font-size: 0.65rem;
+  }
 
-    .left-text {
-        width: 70%;
-        padding: 0;
-    }
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
 
-    .search-box {
-        height: 40px;
-    }
+  .left-text {
+    width: 70%;
+    padding: 0;
+  }
 
-    #email-input {
-        font-size: 0.6rem;
-        width: 100px;
-    }
+  .search-box {
+    height: 40px;
+  }
 
-    #get-button {
-        width: 170px;
-        font-size: 18px;
-    }
+  #email-input {
+    font-size: 0.6rem;
+    width: 100px;
+  }
 
-    .main-text h2 {
-        margin-bottom: 20px;
-        font-size: 20px;
-    }
+  #get-button {
+    width: 170px;
+    font-size: 18px;
+  }
 
-    .control-label {
-        bottom: 1rem;
-        left: 0.5rem;
-        font-size: 9px;
-      }
+  .main-text h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .control-label {
+    bottom: 1rem;
+    left: 0.5rem;
+    font-size: 9px;
+  }
+
+  .hero-container {
+    height: 100vh;
+  }
 }
